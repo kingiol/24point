@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		620E501D172D19FD00D9F36C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620E501C172D19FD00D9F36C /* QuartzCore.framework */; };
+		620E5023172D50F600D9F36C /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 620E5022172D50F600D9F36C /* GameViewController.m */; };
 		621EC4B1172C1988004F8434 /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 621EC447172C1988004F8434 /* Back.png */; };
 		621EC4B2172C1988004F8434 /* Back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 621EC448172C1988004F8434 /* Back@2x.png */; };
 		621EC4B3172C1988004F8434 /* Clubs 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 621EC449172C1988004F8434 /* Clubs 10.png */; };
@@ -113,6 +115,8 @@
 		621EC518172C1988004F8434 /* Spades King@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 621EC4AE172C1988004F8434 /* Spades King@2x.png */; };
 		621EC519172C1988004F8434 /* Spades Queen.png in Resources */ = {isa = PBXBuildFile; fileRef = 621EC4AF172C1988004F8434 /* Spades Queen.png */; };
 		621EC51A172C1988004F8434 /* Spades Queen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 621EC4B0172C1988004F8434 /* Spades Queen@2x.png */; };
+		621EC51F172C1A48004F8434 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 621EC51E172C1A48004F8434 /* Card.m */; };
+		621EC522172C1DE5004F8434 /* CardTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 621EC521172C1DE5004F8434 /* CardTable.m */; };
 		62F1059B172AB1070038487D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F1059A172AB1070038487D /* UIKit.framework */; };
 		62F1059D172AB1070038487D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F1059C172AB1070038487D /* Foundation.framework */; };
 		62F1059F172AB1070038487D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F1059E172AB1070038487D /* CoreGraphics.framework */; };
@@ -124,9 +128,27 @@
 		62F105B1172AB1070038487D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62F105B0172AB1070038487D /* Default-568h@2x.png */; };
 		62F105B4172AB1070038487D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F105B2172AB1070038487D /* MainStoryboard.storyboard */; };
 		62F105B7172AB1070038487D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F105B6172AB1070038487D /* ViewController.m */; };
+		62FA880C172CF523001AE631 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FA879D172CF523001AE631 /* background.png */; };
+		62FA880D172CF523001AE631 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FA879E172CF523001AE631 /* background@2x.png */; };
+		62FA8878172CF523001AE631 /* icon_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FA880A172CF523001AE631 /* icon_2.png */; };
+		62FA8879172CF523001AE631 /* icon_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FA880B172CF523001AE631 /* icon_4.png */; };
+		62FA887C172CF5B6001AE631 /* Action_Man.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62FA887B172CF5B6001AE631 /* Action_Man.ttf */; };
+		62FA8881172CF5F3001AE631 /* ExitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FA887D172CF5F3001AE631 /* ExitButton.png */; };
+		62FA8882172CF5F3001AE631 /* ExitButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FA887E172CF5F3001AE631 /* ExitButton@2x.png */; };
+		62FA8883172CF5F3001AE631 /* ExitButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FA887F172CF5F3001AE631 /* ExitButtonPressed.png */; };
+		62FA8884172CF5F3001AE631 /* ExitButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FA8880172CF5F3001AE631 /* ExitButtonPressed@2x.png */; };
+		62FA8889172CF7F5001AE631 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FA8885172CF7F5001AE631 /* Button.png */; };
+		62FA888A172CF7F5001AE631 /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FA8886172CF7F5001AE631 /* Button@2x.png */; };
+		62FA888B172CF7F5001AE631 /* ButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FA8887172CF7F5001AE631 /* ButtonPressed.png */; };
+		62FA888C172CF7F5001AE631 /* ButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FA8888172CF7F5001AE631 /* ButtonPressed@2x.png */; };
+		62FA8894172CF9CF001AE631 /* UIFont+GameAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FA8893172CF9CF001AE631 /* UIFont+GameAdd.m */; };
+		62FA8897172CFAAA001AE631 /* UIButton+GameAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FA8896172CFAAA001AE631 /* UIButton+GameAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		620E501C172D19FD00D9F36C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		620E5021172D50F600D9F36C /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		620E5022172D50F600D9F36C /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		621EC447172C1988004F8434 /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back.png; sourceTree = "<group>"; };
 		621EC448172C1988004F8434 /* Back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back@2x.png"; sourceTree = "<group>"; };
 		621EC449172C1988004F8434 /* Clubs 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clubs 10.png"; sourceTree = "<group>"; };
@@ -233,6 +255,10 @@
 		621EC4AE172C1988004F8434 /* Spades King@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spades King@2x.png"; sourceTree = "<group>"; };
 		621EC4AF172C1988004F8434 /* Spades Queen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spades Queen.png"; sourceTree = "<group>"; };
 		621EC4B0172C1988004F8434 /* Spades Queen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spades Queen@2x.png"; sourceTree = "<group>"; };
+		621EC51D172C1A48004F8434 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		621EC51E172C1A48004F8434 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		621EC520172C1DE5004F8434 /* CardTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardTable.h; sourceTree = "<group>"; };
+		621EC521172C1DE5004F8434 /* CardTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTable.m; sourceTree = "<group>"; };
 		62F10596172AB1070038487D /* Game24Point.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game24Point.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F1059A172AB1070038487D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		62F1059C172AB1070038487D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -249,6 +275,23 @@
 		62F105B3172AB1070038487D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		62F105B5172AB1070038487D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		62F105B6172AB1070038487D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		62FA879D172CF523001AE631 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		62FA879E172CF523001AE631 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		62FA880A172CF523001AE631 /* icon_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_2.png; sourceTree = "<group>"; };
+		62FA880B172CF523001AE631 /* icon_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_4.png; sourceTree = "<group>"; };
+		62FA887B172CF5B6001AE631 /* Action_Man.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Action_Man.ttf; sourceTree = "<group>"; };
+		62FA887D172CF5F3001AE631 /* ExitButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExitButton.png; sourceTree = "<group>"; };
+		62FA887E172CF5F3001AE631 /* ExitButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ExitButton@2x.png"; sourceTree = "<group>"; };
+		62FA887F172CF5F3001AE631 /* ExitButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExitButtonPressed.png; sourceTree = "<group>"; };
+		62FA8880172CF5F3001AE631 /* ExitButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ExitButtonPressed@2x.png"; sourceTree = "<group>"; };
+		62FA8885172CF7F5001AE631 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		62FA8886172CF7F5001AE631 /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
+		62FA8887172CF7F5001AE631 /* ButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonPressed.png; sourceTree = "<group>"; };
+		62FA8888172CF7F5001AE631 /* ButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonPressed@2x.png"; sourceTree = "<group>"; };
+		62FA8892172CF9CF001AE631 /* UIFont+GameAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+GameAdd.h"; sourceTree = "<group>"; };
+		62FA8893172CF9CF001AE631 /* UIFont+GameAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+GameAdd.m"; sourceTree = "<group>"; };
+		62FA8895172CFAAA001AE631 /* UIButton+GameAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+GameAdd.h"; sourceTree = "<group>"; };
+		62FA8896172CFAAA001AE631 /* UIButton+GameAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GameAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +299,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				620E501D172D19FD00D9F36C /* QuartzCore.framework in Frameworks */,
 				62F1059B172AB1070038487D /* UIKit.framework in Frameworks */,
 				62F1059D172AB1070038487D /* Foundation.framework in Frameworks */,
 				62F1059F172AB1070038487D /* CoreGraphics.framework in Frameworks */,
@@ -265,10 +309,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		620E501F172D50CC00D9F36C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				620E5021172D50F600D9F36C /* GameViewController.h */,
+				620E5022172D50F600D9F36C /* GameViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		620E5020172D50D700D9F36C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		621EC445172C1988004F8434 /* images */ = {
 			isa = PBXGroup;
 			children = (
 				621EC446172C1988004F8434 /* cards */,
+				62FA8885172CF7F5001AE631 /* Button.png */,
+				62FA8886172CF7F5001AE631 /* Button@2x.png */,
+				62FA8887172CF7F5001AE631 /* ButtonPressed.png */,
+				62FA8888172CF7F5001AE631 /* ButtonPressed@2x.png */,
+				62FA887D172CF5F3001AE631 /* ExitButton.png */,
+				62FA887E172CF5F3001AE631 /* ExitButton@2x.png */,
+				62FA887F172CF5F3001AE631 /* ExitButtonPressed.png */,
+				62FA8880172CF5F3001AE631 /* ExitButtonPressed@2x.png */,
+				62FA879D172CF523001AE631 /* background.png */,
+				62FA879E172CF523001AE631 /* background@2x.png */,
+				62FA880A172CF523001AE631 /* icon_2.png */,
+				62FA880B172CF523001AE631 /* icon_4.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -386,6 +458,17 @@
 			path = cards;
 			sourceTree = "<group>";
 		};
+		621EC51C172C1A2D004F8434 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				621EC51D172C1A48004F8434 /* Card.h */,
+				621EC51E172C1A48004F8434 /* Card.m */,
+				621EC520172C1DE5004F8434 /* CardTable.h */,
+				621EC521172C1DE5004F8434 /* CardTable.m */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
 		62F1058B172AB1070038487D = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +489,7 @@
 		62F10599172AB1070038487D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				620E501C172D19FD00D9F36C /* QuartzCore.framework */,
 				62F1059A172AB1070038487D /* UIKit.framework */,
 				62F1059C172AB1070038487D /* Foundation.framework */,
 				62F1059E172AB1070038487D /* CoreGraphics.framework */,
@@ -416,6 +500,10 @@
 		62F105A0172AB1070038487D /* Game24Point */ = {
 			isa = PBXGroup;
 			children = (
+				620E5020172D50D700D9F36C /* Views */,
+				620E501F172D50CC00D9F36C /* View Controllers */,
+				62FA8891172CF9A0001AE631 /* Categories */,
+				621EC51C172C1A2D004F8434 /* Data Model */,
 				621EC445172C1988004F8434 /* images */,
 				62F105A9172AB1070038487D /* AppDelegate.h */,
 				62F105AA172AB1070038487D /* AppDelegate.m */,
@@ -430,6 +518,7 @@
 		62F105A1172AB1070038487D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				62FA887A172CF591001AE631 /* Fonts */,
 				62F105A2172AB1070038487D /* Game24Point-Info.plist */,
 				62F105A3172AB1070038487D /* InfoPlist.strings */,
 				62F105A6172AB1070038487D /* main.m */,
@@ -439,6 +528,25 @@
 				62F105B0172AB1070038487D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62FA887A172CF591001AE631 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				62FA887B172CF5B6001AE631 /* Action_Man.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		62FA8891172CF9A0001AE631 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				62FA8892172CF9CF001AE631 /* UIFont+GameAdd.h */,
+				62FA8893172CF9CF001AE631 /* UIFont+GameAdd.m */,
+				62FA8895172CFAAA001AE631 /* UIButton+GameAdd.h */,
+				62FA8896172CFAAA001AE631 /* UIButton+GameAdd.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -603,6 +711,19 @@
 				621EC518172C1988004F8434 /* Spades King@2x.png in Resources */,
 				621EC519172C1988004F8434 /* Spades Queen.png in Resources */,
 				621EC51A172C1988004F8434 /* Spades Queen@2x.png in Resources */,
+				62FA880C172CF523001AE631 /* background.png in Resources */,
+				62FA880D172CF523001AE631 /* background@2x.png in Resources */,
+				62FA8878172CF523001AE631 /* icon_2.png in Resources */,
+				62FA8879172CF523001AE631 /* icon_4.png in Resources */,
+				62FA887C172CF5B6001AE631 /* Action_Man.ttf in Resources */,
+				62FA8881172CF5F3001AE631 /* ExitButton.png in Resources */,
+				62FA8882172CF5F3001AE631 /* ExitButton@2x.png in Resources */,
+				62FA8883172CF5F3001AE631 /* ExitButtonPressed.png in Resources */,
+				62FA8884172CF5F3001AE631 /* ExitButtonPressed@2x.png in Resources */,
+				62FA8889172CF7F5001AE631 /* Button.png in Resources */,
+				62FA888A172CF7F5001AE631 /* Button@2x.png in Resources */,
+				62FA888B172CF7F5001AE631 /* ButtonPressed.png in Resources */,
+				62FA888C172CF7F5001AE631 /* ButtonPressed@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +737,11 @@
 				62F105A7172AB1070038487D /* main.m in Sources */,
 				62F105AB172AB1070038487D /* AppDelegate.m in Sources */,
 				62F105B7172AB1070038487D /* ViewController.m in Sources */,
+				621EC51F172C1A48004F8434 /* Card.m in Sources */,
+				621EC522172C1DE5004F8434 /* CardTable.m in Sources */,
+				62FA8894172CF9CF001AE631 /* UIFont+GameAdd.m in Sources */,
+				62FA8897172CFAAA001AE631 /* UIButton+GameAdd.m in Sources */,
+				620E5023172D50F600D9F36C /* GameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

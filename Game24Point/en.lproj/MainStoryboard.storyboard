@@ -1,23 +1,117 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="4No-OX-XXD"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icon_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="0lR-yM-oKN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="KQd-70-a6X"/>
+                                    <constraint firstAttribute="width" constant="150" id="hoB-ya-xTU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icon_4.png" translatesAutoresizingMaskIntoConstraints="NO" id="mMe-KD-QfJ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="1ff-J0-uke"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuS-OL-phX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="MJr-7b-pBi"/>
+                                    <constraint firstAttribute="width" constant="136" id="Xsk-hG-8f7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="2" eventType="touchUpInside" id="nSR-ed-WXv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4No-OX-XXD" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="1nh-b0-xcw"/>
+                            <constraint firstItem="mMe-KD-QfJ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="10" type="user" id="Ce1-Sh-iOt"/>
+                            <constraint firstItem="PuS-OL-phX" firstAttribute="centerX" secondItem="4No-OX-XXD" secondAttribute="centerX" type="default" id="DbS-lw-9MM"/>
+                            <constraint firstItem="mMe-KD-QfJ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="224" id="WjR-vu-VfM"/>
+                            <constraint firstAttribute="bottom" secondItem="PuS-OL-phX" secondAttribute="bottom" constant="42" id="enr-nJ-3di"/>
+                            <constraint firstItem="mMe-KD-QfJ" firstAttribute="top" secondItem="0lR-yM-oKN" secondAttribute="top" type="default" id="gLQ-ri-GYy"/>
+                            <constraint firstItem="4No-OX-XXD" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="lch-11-afo"/>
+                            <constraint firstItem="0lR-yM-oKN" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="60" id="oKc-MA-9Ae"/>
+                            <constraint firstItem="4No-OX-XXD" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="t0S-3p-VQX"/>
+                            <constraint firstItem="4No-OX-XXD" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="uj5-lO-1AA"/>
+                            <constraint firstItem="mMe-KD-QfJ" firstAttribute="bottom" secondItem="0lR-yM-oKN" secondAttribute="bottom" type="default" id="yxv-HW-0V2"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="icon2ImageView" destination="0lR-yM-oKN" id="5kW-KG-NDs"/>
+                        <outlet property="icon4ImageView" destination="mMe-KD-QfJ" id="oSu-Rd-hBM"/>
+                        <outlet property="startGameBtn" destination="PuS-OL-phX" id="elO-XJ-15c"/>
+                        <segue destination="PKU-iB-Idf" kind="modal" identifier="startGameSegue" animates="NO" id="xvO-GF-jLz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-77" y="73"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="rC0-0u-pjn">
+            <objects>
+                <viewController id="PKU-iB-Idf" customClass="GameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="puV-4h-IH6">
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="obt-Xl-q18"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ExitButton.png" highlightedImage="ExitButtonPressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="FFY-VG-aOf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Zto-mI-TdL"/>
+                                    <constraint firstAttribute="width" constant="31" id="tWG-HB-sFE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FFY-VG-aOf" firstAttribute="top" secondItem="puV-4h-IH6" secondAttribute="top" type="default" id="682-p8-2kN"/>
+                            <constraint firstItem="obt-Xl-q18" firstAttribute="trailing" secondItem="puV-4h-IH6" secondAttribute="trailing" type="default" id="c2I-fm-EQw"/>
+                            <constraint firstItem="obt-Xl-q18" firstAttribute="leading" secondItem="puV-4h-IH6" secondAttribute="leading" type="default" id="fiV-Yy-5it"/>
+                            <constraint firstItem="obt-Xl-q18" firstAttribute="top" secondItem="puV-4h-IH6" secondAttribute="top" type="default" id="jd2-0h-K09"/>
+                            <constraint firstItem="obt-Xl-q18" firstAttribute="bottom" secondItem="puV-4h-IH6" secondAttribute="bottom" type="default" id="u4x-RE-Zvk"/>
+                            <constraint firstItem="FFY-VG-aOf" firstAttribute="trailing" secondItem="puV-4h-IH6" secondAttribute="trailing" type="default" id="z3W-6p-Mbi"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cc7-ww-QQ3"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sNc-kS-PwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="594" y="73"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ExitButton.png" width="28" height="28"/>
+        <image name="ExitButtonPressed.png" width="28" height="28"/>
+        <image name="background.png" width="480" height="320"/>
+        <image name="icon_2.png" width="600" height="600"/>
+        <image name="icon_4.png" width="300" height="300"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

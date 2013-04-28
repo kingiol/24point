@@ -11,4 +11,21 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+    #import <QuartzCore/QuartzCore.h>
+
+
+
+    #import "UIFont+GameAdd.h"
+    #import "UIButton+GameAdd.h"
 #endif
+
+
+// Return a random number [0.0, 1.0]
+#define RANDOM_FLOAT() ((float)arc4random()/0xFFFFFFFFu)
+
+// Return a random number [0, n]
+#define RANDOM_INT_INCLUDE(n) (arc4random() % (n + 1))
+
+// Return a random number [0, n-1]
+#define RANDOM_INT(n) (arc4random() % n)
